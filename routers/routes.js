@@ -6,10 +6,12 @@ import { userProfile } from "../controllers/profile.controller.js";
 import { getUsers } from "../controllers/users.controller.js";
 import { fileUpload } from "../controllers/fileUpload.controller.js";
 import { upload } from "../services/upload.js";
+import { inivitation } from "../controllers/invitation.controller.js";
 
 const router = Router();
 
 
+router.post("/invite", inivitation);
 router.post("/signup", signUp);
 router.post("/signin", signIn);
 router.post("/userProfile", authMiddleware, userProfile);
