@@ -7,4 +7,5 @@ const inviteSchema = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now },
 });
 
-export const Invite = mongoose.model("Invite", inviteSchema);
+const Invite = mongoose.model("Invite", inviteSchema);
+export default Invite;
