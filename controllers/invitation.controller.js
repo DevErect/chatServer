@@ -1,4 +1,4 @@
-import { Invite } from "../models/Invite.js";
+import Invite from "../models/Invite.js";
 
 export const inivitation = async (req, res) => {
     const { date, place, info } = req.body;
