@@ -7,7 +7,8 @@ const messageSchema = new mongoose.Schema({
   fileUrl: String,
   fileType: String,
   fileName: String,
-  timestamp: { type: Date, default: Date.now }
+  timestamp: { type: Date, default: Date.now },
+  seen: Boolean
 });
 
 export const Message = mongoose.model('Message', messageSchema);
